@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/stylelogin.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-box">
+        <div class="form">
+          <form class="loginForm" id="loginForm">
+            <input type="text" name="nombre" placeholder="nombre" id="nombre">
+            <input type="text" name="apellido" placeholder="apellido" id="apellido">
+            <input type="number" name="nomero" placeholder="numero" id="numero">
+            <input type="number" name="edad" placeholder="edad" id="edad">
+            <input type="email" name="correo" placeholder="correo" id="correo">
+
+            <button type="button" onclick="validarCredenciales()">login</button>
+          </form>
+        </div>
+    </div>
+    <script src="javascript/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/style2.css">
+    <title>Serviciós</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="img" src="../imagenes/logo.png" alt="">  
+            </div>
+            <ul class="lista">
+                <li class="lista_menu"><a class="texto_menu" href="../index.html">Inicio</a></li>
+                <li class="lista_menu"><a class="texto_menu" href="quienesSomos.html">¿Quienes somos?</a></li>
+                <li class="lista_menu"><a class="texto_menu" href="#">Productos</a></li>
+                <li class="lista_menu"><a class="texto_menu" href="contactenos.html">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="slider" x-data="{start: true, end: false}" style="padding-top: 90px;">
+        <div class="slider__content" x-ref="slider" x-on:scroll.debounce="$refs.slider.scrollLeft == 0 ? start = true : start = false; Math.abs(($refs.slider.scrollWidth - $refs.slider.offsetWidth) - $refs.slider.scrollLeft) < 5 ? end = true : end = false;">
+            <div class="slider__item">
+                <img class="slider__image" src="../imagenes/fot1.webp" alt="Image" id="fot1">
+                <div class="slider__info">
+                    <h2>Samsung Galaxy A33</h2>
+                </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="../imagenes/fot2.webp" alt="Image" id="fot2">
+            <div class="slider__info">
+              <h2>Celular Samsung A35</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="../imagenes/fot3.webp" alt="Image" id="fot3">
+            <div class="slider__info">
+              <h2>Computador Portátil HP Pavilion</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="../imagenes/fot4.webp" alt="Image" id="fot4">
+            <div class="slider__info">
+              <h2>Portátil Victus Gaming HP 15-fb0134la</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="../imagenes/fot5.webp" alt="Image" id="fot5">
+            <div class="slider__info">
+              <h2>Airpods 3 generación - Apple</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="../imagenes/fot6.webp" alt="Image" id="fot6">
+            <div class="slider__info">
+              <h2>Apple AirPods Max</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="../imagenes/fot7.webp" alt="Image" id="fot7">
+            <div class="slider__info">
+              <h2>Televisor Samsung 55 Pulgadas Crystal LED UHD</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="../imagenes/fot8.webp" alt="Image" id="fot8">
+            <div class="slider__info">
+              <h2>Televisor Samsung 55 pulgadas OLED 4K UHD Smart TV</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="../imagenes/fot9.webp" alt="Image" id="fot9">
+            <div class="slider__info">
+              <h2>Xiaomi Redmi Pad Se Tablet 11 Fhd+ 128gb4gb 8mpx</h2>
+            </div>
+          </div>
+          <div class="slider__item">
+            <img class="slider__image" src="../imagenes/fot10.webp" alt="Image" id="fot10">
+            <div class="slider__info">
+              <h2>Tablet LENOVO 11" Pulgadas Tab M11 - 128GB</h2>
+            </div>
+          </div>
+        </div>
+        <div class="slider__nav" style="display: flex;justify-content: center;">
+          <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth * -1, behavior: 'smooth'});" x-bind:class="start ? '' : 'slider__nav__button--active'">Anterior</button>
+          <button class="slider__nav__button" x-on:click="$refs.slider.scrollBy({left: $refs.slider.offsetWidth, behavior: 'smooth'});" x-bind:class="end ? '' : 'slider__nav__button--active'">Próximo</button>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/3.10.2/cdn.js"></script>
+      <script src="../javascript/scrpit1.js"></script>  
+</body>
+</html>

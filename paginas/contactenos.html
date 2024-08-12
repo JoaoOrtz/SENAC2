@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Contactenos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img class="img" src="../imagenes/logo.png" alt="">  
+            </div>
+            <ul class="lista">
+                <li class="lista_menu"><a class="texto_menu" href="../index.html">Inicio</a></li>
+                <li class="lista_menu"><a class="texto_menu" href="quienesSomos.html">¿Quienes somos?</a></li>
+                <li class="lista_menu"><a class="texto_menu" href="productos.html">Productos</a></li>
+                <li class="lista_menu"><a class="texto_menu" href="#">Contactenos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contacto-formulario">
+        <h2>Contatenos</h2>
+        <form action="#" id="contact_form" onsubmit="return validarForm()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+        
+            <label for="correo">Correo:</label>
+            <input type="text" name="correo" id="correo" placeholder="Ingrese su correo" required>
+        
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mesaje" id="mensaje" cols="30" rows="10"></textarea>
+
+            <button class="bubble-button" type="submit" name="button">Enviar Informacion</button>   
+        </form>
+    </section>
+</body>
+</html>
